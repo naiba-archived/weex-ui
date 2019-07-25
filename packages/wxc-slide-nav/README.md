@@ -30,20 +30,20 @@
           <div class="padding"></div>
         </cell>
         <cell class="cell" v-for="(item, index) in items">
-            <text class="text">{{index + 1}}</text>
+            <text class="text">{{index + 1}}</p>
         </cell>
       </list>
   
       <wxc-slide-nav class="nav nav-top" ref="topNav" position="top" @slideIn="slideIn">
-        <div class="nav-cell"><text>Before</text></div>
-        <div class="nav-cell"><text>06-22</text></div>
-        <div class="nav-cell"><text>Next</text></div>
+        <div class="nav-cell"><p>Before</p></div>
+        <div class="nav-cell"><p>06-22</p></div>
+        <div class="nav-cell"><p>Next</p></div>
       </wxc-slide-nav>
   
       <wxc-slide-nav class="nav nav-bottom" ref="bottomNav" position="bottom" @slideOut="slideOut">
-        <div class="nav-cell"><text class="nav-text">Filter</text></div>
-        <div class="nav-cell"><text class="nav-text">Time</text></div>
-        <div class="nav-cell"><text class="nav-text">From</text></div>
+        <div class="nav-cell"><text class="nav-text">Filter</p></div>
+        <div class="nav-cell"><text class="nav-text">Time</p></div>
+        <div class="nav-cell"><text class="nav-text">From</p></div>
       </wxc-slide-nav>
     </div>
 </template>

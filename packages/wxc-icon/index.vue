@@ -2,7 +2,7 @@
 <!-- Created by Tw93 on 17/12/25. -->
 
 <template>
-  <text class="icon-font" :style="mergeStyle" @click="itemClicked(name)">{{Icon[name]}}</text>
+  <text class="icon-font" :style="mergeStyle" @click="itemClicked(name)">{{Icon[name]}}</p>
 </template>
 
 <style scoped>

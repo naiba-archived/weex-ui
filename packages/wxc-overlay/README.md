@@ -14,7 +14,7 @@
 <template>
   <div class="wrapper">
     <div class="btn" @click="openOverlay">
-      <text class="btn-txt">Click</text>
+      <text class="btn-txt">Click</p>
     </div>
     <wxc-overlay
       :show="show"

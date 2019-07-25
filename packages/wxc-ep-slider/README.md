@@ -27,7 +27,7 @@
            :key="index"
            :slot="`card${index}_${sliderId}`"
            :class="['slider',`slider${index}`]">
-        <text>this is the {{index + 1}} slider</text>
+        <p>this is the {{index + 1}} slider</p>
       </div>
     </wxc-ep-slider>
   </div>

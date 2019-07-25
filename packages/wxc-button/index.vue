@@ -7,7 +7,7 @@
        @click="onClicked"
        :accessible="true"
        :aria-label="text">
-    <text class="btn-text" :style="mrTextStyle">{{text}}</text>
+    <text class="btn-text" :style="mrTextStyle">{{text}}</p>
   </div>
 </template>
 

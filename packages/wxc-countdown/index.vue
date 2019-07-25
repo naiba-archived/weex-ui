@@ -8,39 +8,39 @@
            v-if="tplIndexOfDays !== -1"
            :accessible="true"
            :aria-label="`${countDownData.day}天`">
-        <text :style="mrTimeTextStyle">{{countDownData.day}}</text>
+        <text :style="mrTimeTextStyle">{{countDownData.day}}</p>
       </div>
       <div :style="mrDotBoxStyle" v-if="tplIndexOfDays !== -1" :aria-hidden="true">
-        <text :style="mrDotTextStyle">{{getDot(tplIndexOfDays, tplIndexOfHours)}}</text>
+        <text :style="mrDotTextStyle">{{getDot(tplIndexOfDays, tplIndexOfHours)}}</p>
       </div>
 
       <div :style="mrTimeBoxStyle"
            v-if="tplIndexOfHours !== -1"
            :accessible="true"
            :aria-label="`${countDownData.hour}时`">
-        <text :style="mrTimeTextStyle">{{countDownData.hour}}</text>
+        <text :style="mrTimeTextStyle">{{countDownData.hour}}</p>
       </div>
       <div :style="mrDotBoxStyle" v-if="tplIndexOfHours !== -1" :aria-hidden="true">
-        <text :style="mrDotTextStyle">{{getDot(tplIndexOfHours, tplIndexOfMinutes)}}</text>
+        <text :style="mrDotTextStyle">{{getDot(tplIndexOfHours, tplIndexOfMinutes)}}</p>
       </div>
 
       <div :style="mrTimeBoxStyle" v-if="tplIndexOfMinutes !== -1"
            :accessible="true"
            :aria-label="`${countDownData.minute}分`">
-        <text :style="mrTimeTextStyle">{{countDownData.minute}}</text>
+        <text :style="mrTimeTextStyle">{{countDownData.minute}}</p>
       </div>
       <div :style="mrDotBoxStyle" v-if="tplIndexOfMinutes !== -1" :aria-hidden="true">
-        <text :style="mrDotTextStyle">{{getDot(tplIndexOfMinutes, tplIndexOfSeconds)}}</text>
+        <text :style="mrDotTextStyle">{{getDot(tplIndexOfMinutes, tplIndexOfSeconds)}}</p>
       </div>
 
       <div :style="mrTimeBoxStyle"
            v-if="tplIndexOfSeconds !== -1"
            :accessible="true"
            :aria-label="`${countDownData.second}秒`">
-        <text :style="mrTimeTextStyle">{{countDownData.second}}</text>
+        <text :style="mrTimeTextStyle">{{countDownData.second}}</p>
       </div>
       <div :style="mrDotBoxStyle" v-if="tplIndexOfSeconds !== -1" :aria-hidden="true">
-        <text :style="mrDotTextStyle">{{getDot(tplIndexOfSeconds, -1)}}</text>
+        <text :style="mrDotTextStyle">{{getDot(tplIndexOfSeconds, -1)}}</p>
       </div>
     </div>
   </div>

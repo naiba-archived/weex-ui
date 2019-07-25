@@ -14,7 +14,7 @@
 <template>
 <div>
     <WxcSwipeAction @onNodeClick='onTest' :data='data'>
-      <text class="text" slot-scope="val">{{val.val.item.title}}{{val.val.index}}</text>
+      <text class="text" slot-scope="val">{{val.val.item.title}}{{val.val.index}}</p>
     </WxcSwipeAction>
 </div>
 </template>

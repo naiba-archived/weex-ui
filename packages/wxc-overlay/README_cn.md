@@ -14,7 +14,7 @@
 <template>
   <div class="wrapper">
     <div class="btn" @click="openOverlay">
-      <text class="btn-txt">点击打开蒙层</text>
+      <text class="btn-txt">点击打开蒙层</p>
     </div>
     <wxc-overlay
       :show="show"

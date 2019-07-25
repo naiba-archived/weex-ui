@@ -14,10 +14,10 @@
   <div class="wxc-demo">
     <scroller class="scroller">
       <div class="btn" @click="showListCity">
-        <text class="btn-txt">City Select</text>
+        <text class="btn-txt">City Select</p>
       </div>
       <div class="panel">
-        <text v-if="currentCity" class="text">Current City: {{currentCity}}</text>
+        <text v-if="currentCity" class="text">Current City: {{currentCity}}</p>
       </div>
     </scroller>
     <wxc-city ref="wxcCity"

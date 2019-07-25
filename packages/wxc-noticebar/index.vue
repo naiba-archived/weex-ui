@@ -12,7 +12,7 @@
            v-if="typeIcon"
            :src="typeIcon"></image>
     <text class="noticebar-content"
-          :style="{ width: contentWidth + 'px',lines:lines}">{{notice}}</text>
+          :style="{ width: contentWidth + 'px',lines:lines}">{{notice}}</p>
     <div class="more-click-content"
          @click="noticeIconClicked"
          v-if="modeIcon"

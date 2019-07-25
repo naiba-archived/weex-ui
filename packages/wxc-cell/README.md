@@ -17,7 +17,7 @@
 <template>
   <div class="container">
     <div class="demo">
-      <text class="demo-title">List demo</text>
+      <text class="demo-title">List demo</p>
 
       <wxc-cell label="Label demo text"
                 title="Title demo text"
@@ -41,7 +41,7 @@
 
     </div>
     <div class="demo">
-      <text class="demo-title">No label</text>
+      <text class="demo-title">No label</p>
       <wxc-cell title="Title demo text"
                 :has-arrow="true"
                 @wxcCellClicked="wxcCellClicked"
@@ -49,7 +49,7 @@
     </div>
 
     <div class="demo">
-      <text class="demo-title">Add desc</text>
+      <text class="demo-title">Add desc</p>
       <wxc-cell title="Title text"
                 desc="Desc text"
                 :has-arrow="true"
@@ -58,14 +58,14 @@
     </div>
 
     <div class="demo">
-      <text class="demo-title">No arrow</text>
+      <text class="demo-title">No arrow</p>
       <wxc-cell title="Title text"
                 :has-arrow="false"
                 @wxcCellClicked="wxcCellClicked"
                 :has-top-border="true"></wxc-cell>
     </div>
     <div class="demo">
-      <text class="demo-title">Custom slot</text>
+      <text class="demo-title">Custom slot</p>
       <wxc-cell title="Title text"
                 :has-arrow="false"
                 :has-top-border="true">

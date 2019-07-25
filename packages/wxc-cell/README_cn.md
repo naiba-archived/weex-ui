@@ -15,7 +15,7 @@
 <template>
   <div class="container">
     <div class="demo">
-      <text class="demo-title">列表list展示</text>
+      <text class="demo-title">列表list展示</p>
 
       <wxc-cell label="标题"
                 title="Weex Ui"
@@ -39,7 +39,7 @@
 
     </div>
     <div class="demo">
-      <text class="demo-title">不配置label</text>
+      <text class="demo-title">不配置label</p>
       <wxc-cell title="标题"
                 :has-arrow="true"
                 @wxcCellClicked="wxcCellClicked"
@@ -47,7 +47,7 @@
     </div>
 
     <div class="demo">
-      <text class="demo-title">配置附加信息</text>
+      <text class="demo-title">配置附加信息</p>
       <wxc-cell title="标题"
                 desc="这里是附加信息"
                 :has-arrow="true"
@@ -56,14 +56,14 @@
     </div>
 
     <div class="demo">
-      <text class="demo-title">不显示箭头</text>
+      <text class="demo-title">不显示箭头</p>
       <wxc-cell title="标题"
                 :has-arrow="false"
                 @wxcCellClicked="wxcCellClicked"
                 :has-top-border="true"></wxc-cell>
     </div>
     <div class="demo">
-      <text class="demo-title">自定义子元素</text>
+      <text class="demo-title">自定义子元素</p>
       <wxc-cell title="这里是标题"
                 :has-arrow="false"
                 :has-top-border="true">

@@ -16,7 +16,7 @@
 <template>
   <div class="demo-container">
     <div class="btn" @click="openLightBox">
-      <text class="btn-txt">点击按钮弹出全屏图片</text>
+      <text class="btn-txt">点击按钮弹出全屏图片</p>
     </div>
     <wxc-lightbox
       ref="wxc-lightbox"

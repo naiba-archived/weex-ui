@@ -15,7 +15,7 @@
 <template>
   <div class="demo-container">
     <div class="btn" @click="openLightBox">
-      <text class="btn-txt">Click the button</text>
+      <text class="btn-txt">Click the button</p>
     </div>
     <wxc-lightbox
       ref="wxc-lightbox"

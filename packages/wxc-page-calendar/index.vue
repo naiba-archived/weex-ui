@@ -12,7 +12,7 @@
       <text class="flex-item weekday-text"
             :key="k"
             :aria-label="`周${week}`"
-            v-for="(week,k) in ['日','一','二','三','四','五','六']">{{week}}</text>
+            v-for="(week,k) in ['日','一','二','三','四','五','六']">{{week}}</p>
     </div>
     <list class="calendar-list"
           v-if="isShow">
@@ -20,7 +20,7 @@
             :key="index"
             :class="[!month.title && 'calendar-row']">
         <text class="month-text"
-              v-if="month.title">{{month.title}}</text>
+              v-if="month.title">{{month.title}}</p>
         <div v-else
              v-for="(cell,rowIndex) in month"
              :key="`${index}-${rowIndex}`"
@@ -31,11 +31,11 @@
              :aria-label="`${cell.text?cell.text:''},${cell.note?cell.note:''},${cell.ext?cell.ext:''}`"
              @click="onClickDate(cell)">
           <text :class="['calendar-note', cell.cls]"
-                :style="cell.isSelected ? selectedTextStyle:{}">{{cell.note}}</text>
+                :style="cell.isSelected ? selectedTextStyle:{}">{{cell.note}}</p>
           <text :class="['calendar-day', cell.cls]"
-                :style="cell.isSelected ? selectedTextStyle:{}">{{cell.text}}</text>
+                :style="cell.isSelected ? selectedTextStyle:{}">{{cell.text}}</p>
           <text :class="['calendar-ext', cell.cls]"
-                :style="cell.isSelected ? selectedTextStyle:{}">{{cell.ext}}</text>
+                :style="cell.isSelected ? selectedTextStyle:{}">{{cell.ext}}</p>
         </div>
       </cell>
       <cell class="iphone-x" v-if="isIPhoneX"></cell>

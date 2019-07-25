@@ -16,7 +16,7 @@
 <template>
   <div class="container">
     <div class="demo">
-      <text class="value-text">基础输入框</text>
+      <text class="value-text">基础输入框</p>
       <wxc-searchbar ref="wxc-searchbar"
                      @wxcSearchbarCancelClicked="wxcSearchbarCancelClicked"
                      @wxcSearchbarInputReturned="wxcSearchbarInputReturned"
@@ -24,14 +24,14 @@
                      @wxcSearchbarCloseClicked="wxcSearchbarCloseClicked"
                      @wxcSearchbarInputOnFocus="wxcSearchbarInputOnFocus"
                      @wxcSearchbarInputOnBlur="wxcSearchbarInputOnBlur"></wxc-searchbar>
-      <text class="value-text">{{value}}</text>
+      <text class="value-text">{{value}}</p>
     </div>
     <div class="demo demo1">
-      <text class="value-text">输入框禁用</text>
+      <text class="value-text">输入框禁用</p>
       <wxc-searchbar disabled="true" @wxcSearchbarInputDisabledClicked="searchbarInputDisabledOnclick"></wxc-searchbar>
     </div>
     <div class="demo demo1">
-      <text class="value-text">带有目的地模式的输入框</text>
+      <text class="value-text">带有目的地模式的输入框</p>
       <wxc-searchbar disabled="true"
                      placeholder="搜索目的地"
                      mod="hasDep"

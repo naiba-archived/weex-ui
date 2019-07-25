@@ -18,7 +18,7 @@
   <div class="container">
     <div class="demo">
       <div class="btn" @click="openDialog">
-        <text class="btn-txt">对话消息Dialog</text>
+        <text class="btn-txt">对话消息Dialog</p>
       </div>
     </div>
     <wxc-dialog title="标题"

@@ -13,16 +13,16 @@
         <div class="point" :class="item.__pointClass__" :style="item.__pointStyle__"></div>
 
         <text class="text-title full-rest" :class="item.__titleTextClass__"
-              :style="item.__titleStyle__">{{item.title}}</text>
+              :style="item.__titleStyle__">{{item.title}}</p>
       </div>
 
       <div class="content flex-row" :class="item.__contentClass__">
         <div class="line" :class="item.__contentLineClass__" :style="item.__lineStyle__"></div>
 
         <div class="full-rest">
-          <text v-if="item.desc" class="text-desc">{{item.desc}}</text>
+          <text v-if="item.desc" class="text-desc">{{item.desc}}</p>
 
-          <text v-if="item.date" class="text-date">{{item.date}}</text>
+          <text v-if="item.date" class="text-date">{{item.date}}</p>
         </div>
       </div>
     </div>

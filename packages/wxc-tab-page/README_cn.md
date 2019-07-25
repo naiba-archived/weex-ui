@@ -39,7 +39,7 @@
                       url="https://h5.m.taobao.com/trip/ticket/detail/index.html?scenicId=2675"
                       @wxcPanItemPan="wxcPanItemPan">
          <div class="content">
-            <text>{{key}}</text>
+            <p>{{key}}</p>
          </div>
         </wxc-pan-item>
       </cell>
@@ -182,9 +182,9 @@
 - 当使用slot的方式配置头部导航的时候，需要确保原有简单配置已经不能满足现有需求情况下再使用，可以传入参数`:title-use-slot="true"`,同时在wxc-tab-page组件内部传入如下slot对应节点即可
 - 可以通过遍历到方式来生成，同时根据wxcTabPageCurrentTabSelected来确定当前的选择页，自己管理颜色即可。
 ```
-<div slot="tab-title-0"><text>111</text></div>
-<div slot="tab-title-1"><text>222</text></div>
-<div slot="tab-title-2"><text>333</text></div>
+<div slot="tab-title-0"><p>111</p></div>
+<div slot="tab-title-1"><p>222</p></div>
+<div slot="tab-title-2"><p>333</p></div>
 ```
 
 ### 主动触发设置页面

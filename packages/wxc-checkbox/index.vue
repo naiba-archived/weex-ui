@@ -9,7 +9,7 @@
             :aria-label="`${title},状态为${checked ? '已选中' : '未选中'},${disabled ? '不可更改' : '点击可切换'}`">
     <text :style="{color:textColor}"
           class="title-text"
-          slot="title">{{title}}</text>
+          slot="title">{{title}}</p>
     <image :src="checkIcon"
            slot="value"
            class="checkbox"></image>

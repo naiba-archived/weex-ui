@@ -28,7 +28,7 @@
            :key="index"
            :slot="`card${index}_${sliderId}`"
            :class="['slider',`slider${index}`]">
-        <text>这里是第{{index + 1}}个滑块</text>
+        <p>这里是第{{index + 1}}个滑块</p>
       </div>
     </wxc-ep-slider>
   </div>
@@ -110,7 +110,7 @@
 <div class="more-slider" 
      slot="pull-more" 
      :style="{left: `${cardLength * (cardSize.width + cardSize.spacing)+60}px`,marginLeft:`${(750 - cardSize.width) / 2}px`}">
-      <text>加载更多</text>
+      <p>加载更多</p>
 </div>
 ```
 

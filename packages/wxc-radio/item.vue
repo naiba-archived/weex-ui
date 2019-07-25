@@ -9,7 +9,7 @@
             :aria-label="`${title},状态为${checked?'已选中':'未选中'},${disabled?'不可更改':''}`">
     <text :style="{color:color}"
           class="title-text"
-          slot="title">{{title}}</text>
+          slot="title">{{title}}</p>
     <image :src="radioIcon"
            v-if="radioIcon"
            slot="value"

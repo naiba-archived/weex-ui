@@ -13,7 +13,7 @@
                resize="contain"
                quality="original"></image>
         <text v-if="loadingText"
-              class="loading-text">{{loadingText}}</text>
+              class="loading-text">{{loadingText}}</p>
       </div>
     </div>
   </div>

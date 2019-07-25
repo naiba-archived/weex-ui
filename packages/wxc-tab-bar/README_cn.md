@@ -20,16 +20,16 @@
                title-type="icon"
                @wxcTabBarCurrentTabSelected="wxcTabBarCurrentTabSelected">
     <!-- 第一个页面内容-->
-    <div class="item-container" :style="contentStyle"><text>首页</text></div>
+    <div class="item-container" :style="contentStyle"><p>首页</p></div>
     
     <!-- 第二个页面内容-->
-    <div class="item-container" :style="contentStyle"><text>特别推荐</text></div>
+    <div class="item-container" :style="contentStyle"><p>特别推荐</p></div>
     
     <!-- 第三个页面内容-->
-    <div class="item-container" :style="contentStyle"><text>消息中心</text></div>
+    <div class="item-container" :style="contentStyle"><p>消息中心</p></div>
     
     <!-- 第四个页面内容-->
-    <div class="item-container" :style="contentStyle"><text>我的主页</text></div>
+    <div class="item-container" :style="contentStyle"><p>我的主页</p></div>
   </wxc-tab-bar>
 </template>
 
@@ -129,9 +129,9 @@
 - 当使用slot的方式配置底部导航的时候，需要确保原有简单配置已经不能满足现有需求情况下再使用，可以传入参数`:title-use-slot="true"`,同时在wxc-tab-bar组件内部传入如下slot对应节点即可
 - 可以通过遍历到方式来生成，同时根据wxcTabBarCurrentTabSelected来确定当前的选择页，自己管理颜色即可。
 ```
-<div slot="tab-title-0"><text>111</text></div>
-<div slot="tab-title-1"><text>222</text></div>
-<div slot="tab-title-2"><text>333</text></div>
+<div slot="tab-title-0"><p>111</p></div>
+<div slot="tab-title-1"><p>222</p></div>
+<div slot="tab-title-2"><p>333</p></div>
 ```
 
 

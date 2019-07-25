@@ -5,7 +5,7 @@
   <div :class="['wxc-tag', 'border-' + tagTheme]"
        :style="newTheme.divStyle">
     <text :class="['tag-text', tagTheme]"
-          :style="newTheme.textStyle">{{tagValue}}</text>
+          :style="newTheme.textStyle">{{tagValue}}</p>
   </div>
 </template>
 

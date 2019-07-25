@@ -9,15 +9,15 @@
              :aria-hidden="true"
              :src="resultType.pic"></image>
       <div class="result-content" v-if="resultType.content">
-        <text class="content-text">{{resultType.content}}</text>
+        <text class="content-text">{{resultType.content}}</p>
         <text class="content-text content-desc"
-              v-if="resultType.desc">{{resultType.desc}}</text>
+              v-if="resultType.desc">{{resultType.desc}}</p>
       </div>
       <div class="result-button"
            v-if="resultType.button"
            @touchend="handleTouchEnd"
            @click="onClick">
-        <text class="button-text">{{resultType.button}}</text>
+        <text class="button-text">{{resultType.button}}</p>
       </div>
     </div>
   </div>

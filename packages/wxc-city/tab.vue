@@ -5,7 +5,7 @@
            v-for="(name,i) in ['国内','国际']"
            :key="i"
            @click="switchTab(i)">
-        <text class="['tab-item-text', i===checkedIndex && 'text-selected']">{{name}}</text>
+        <text class="['tab-item-text', i===checkedIndex && 'text-selected']">{{name}}</p>
       </div>
     </div>
     <div class="tab-item-selected-bar">

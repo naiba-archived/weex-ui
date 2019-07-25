@@ -15,11 +15,11 @@
 <template>
   <div class="wrapper">
     <div class="demo">
-      <text class="text">no config:</text>
+      <text class="text">no config:</p>
       <wxc-stepper></wxc-stepper>
     </div>
     <div class="demo">
-      <text class="text">{min:2,max:10,step:2,defaultValue:4}</text>
+      <text class="text">{min:2,max:10,step:2,defaultValue:4}</p>
       <wxc-stepper default-value="4"
                    step="2"
                    max="10"
@@ -27,7 +27,7 @@
                    @wxcStepperValueChanged="stepperValueChange"></wxc-stepper>
     </div>
     <div class="demo">
-      <text class="text">disabled</text>
+      <text class="text">disabled</p>
       <wxc-stepper default-value="4"
                    step="2"
                    max="10"
@@ -36,7 +36,7 @@
     </div>
 
     <div class="demo">
-      <text class="text">input只读:</text>
+      <text class="text">input只读:</p>
       <wxc-stepper :read-only="isOnlyRead"></wxc-stepper>
     </div>
   </div>

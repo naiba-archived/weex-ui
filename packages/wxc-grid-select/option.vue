@@ -7,7 +7,7 @@
        @click="onClick"
        :accessible="true"
        :aria-label="`${title},${checked?'已选中':'未选中'}`">
-    <text v-if="title" class="text-title" :style="cTitleStyle">{{title}}</text>
+    <text v-if="title" class="text-title" :style="cTitleStyle">{{title}}</p>
 
     <image v-if="checked && icon" class="image-checked" :src="icon"></image>
   </div>

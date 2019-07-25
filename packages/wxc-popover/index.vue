@@ -22,7 +22,7 @@
           <image :src="item.icon"
                  v-if="item.icon"
                  class="btn-icon"></image>
-          <text class="btn-text" :style="textStyle">{{item.text}}</text>
+          <text class="btn-text" :style="textStyle">{{item.text}}</p>
         </div>
       </div>
     </div>

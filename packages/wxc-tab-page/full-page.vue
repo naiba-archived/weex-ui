@@ -36,7 +36,7 @@
 
         <text
           :style="{ fontSize: tabStyles.fontSize+'px', fontWeight: (currentPage == index && tabStyles.isActiveTitleBold)? 'bold' : 'normal', color: currentPage == index ? tabStyles.activeTitleColor : tabStyles.titleColor, paddingLeft:(tabStyles.textPaddingLeft?tabStyles.textPaddingLeft:10)+'px', paddingRight:(tabStyles.textPaddingRight?tabStyles.textPaddingRight:10)+'px'}"
-          class="tab-text">{{v.title}}</text>
+          class="tab-text">{{v.title}}</p>
 
         <div class="border-bottom"
              v-if="tabStyles.hasActiveBottom"

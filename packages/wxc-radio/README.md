@@ -15,7 +15,7 @@
   <div class="wxc-demo">
     <scroller class="scroller">
       <wxc-radio :list="list" @wxcRadioListChecked="wxcRadioListChecked"></wxc-radio>
-      <text class="radio-text">checkedItem: {{checkedInfo}}</text>
+      <text class="radio-text">checkedItem: {{checkedInfo}}</p>
       <category title="Radio disabled"></category>
       <wxc-radio :list="list2"></wxc-radio>
     </scroller>

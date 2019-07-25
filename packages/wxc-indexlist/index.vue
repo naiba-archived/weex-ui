@@ -15,7 +15,7 @@
             :ref="'index-item-title-' + v.title">
         <text :class="['index-list-title',v.type && v.type=='group' && 'group-title']"
               :style="headerStyle"
-              v-if="!onlyShowList">{{v.title}}</text>
+              v-if="!onlyShowList">{{v.title}}</p>
         <div v-if="v.type && v.type === 'group' && !onlyShowList"
              :style="groupWrapStyle"
              class="group">
@@ -34,9 +34,9 @@
                      src="https://gw.alicdn.com/tfs/TB1JUiUPFXXXXXUXXXXXXXXXXXX-32-32.png"></image>
               <div>
                 <text class="item-name"
-                      :style="groupItemTextStyle">{{item.name}}</text>
+                      :style="groupItemTextStyle">{{item.name}}</p>
                 <text class="item-desc" v-if="item.desc"
-                      :style="groupItemDescStyle">{{item.desc}}</text>
+                      :style="groupItemDescStyle">{{item.desc}}</p>
               </div>
             </div>
           </div>
@@ -49,8 +49,8 @@
                @click="itemClicked(item)"
                :accessible="true"
                :aria-label="`${item.name},${item.desc?item.desc:''}`">
-            <text class="title" :style="itemTextStyle">{{item.name}}</text>
-            <text class="desc" :style="itemDescStyle">{{item.desc}}</text>
+            <text class="title" :style="itemTextStyle">{{item.name}}</p>
+            <text class="desc" :style="itemDescStyle">{{item.desc}}</p>
           </div>
         </div>
       </cell>
@@ -64,12 +64,12 @@
             :style="navTextStyle"
             :title="item.title"
             @click="go2Key(item.title)"
-            class="list-nav-key">{{item.title}}</text>
+            class="list-nav-key">{{item.title}}</p>
     </div>
     <div class="index-list-pop"
          :style="popStyle"
          v-if="popKeyShow">
-      <text class="list-pop-text" :style="popTextStyle">{{popKey}}</text>
+      <text class="list-pop-text" :style="popTextStyle">{{popKey}}</p>
     </div>
   </div>
 </template>

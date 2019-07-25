@@ -16,15 +16,15 @@
 <template>
   <div class="wrapper">
     <div class="demo">
-      <text class="demo-text">默认</text>
+      <text class="demo-text">默认</p>
       <wxc-progress></wxc-progress>
     </div>
     <div class="demo">
-      <text class="demo-text">设置value</text>
+      <text class="demo-text">设置value</p>
       <wxc-progress :value=50 :bar-width=600></wxc-progress>
     </div>
     <div class="demo">
-      <text class="demo-text">自定义</text>
+      <text class="demo-text">自定义</p>
       <wxc-progress :value=70
                     bar-color='#9B7B56'
                     :bar-height=16
@@ -32,12 +32,12 @@
                     :bar-width=640></wxc-progress>
     </div>
     <div class="btn" @click="uploadFile">
-      <text class="btn-txt">上传文件</text>
+      <text class="btn-txt">上传文件</p>
     </div>
     <div class="up-demo" v-if="progressVisible">
-      <text class="progress-text left">0%</text>
+      <text class="progress-text left">0%</p>
       <wxc-progress :value="value" :bar-width=540></wxc-progress>
-      <text class="progress-text right">{{value}}%</text>
+      <text class="progress-text right">{{value}}%</p>
     </div>
   </div>
 </template>

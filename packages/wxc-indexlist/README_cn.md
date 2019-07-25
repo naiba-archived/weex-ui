@@ -97,7 +97,7 @@
                    :city-location-config="cityLocationConfig"
                    :show-index="showIndex"
                    @wxcIndexlistItemClicked="wxcIndexlistItemClicked">
-                <div slot="head"><text>aaaaaa</text></div>       
+                <div slot="head"><p>aaaaaa</p></div>       
 </wxc-indexlist>
 ```
 <img src="https://img.alicdn.com/tfs/TB1YhUjj9_I8KJjy0FoXXaFnVXa-818-276.jpg" width="240"/>

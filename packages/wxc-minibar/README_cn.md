@@ -15,7 +15,7 @@
 <template>
   <div class="container" :style="{ height: height }">
     <div class="demo">
-      <text class="text">配置颜色</text>
+      <text class="text">配置颜色</p>
       <wxc-minibar title="标题"
                    background-color="#009ff0"
                    text-color="#FFFFFF"
@@ -75,7 +75,7 @@
   <image src="https://img.alicdn.com/tfs/TB1QN8pdlHH8KJjy0FbXXcqlpXa-220-80.png"
          slot="left"
          style="height: 32px;width: 88px;"></image>
-  <text style="font-size: 40px;" slot="middle">Customize this component</text>
+  <text style="font-size: 40px;" slot="middle">Customize this component</p>
   <image slot="right"
          src="https://img.alicdn.com/tfs/TB1j39Uc0fJ8KJjy0FeXXXKEXXa-160-128.png"
          style="height: 32px;width: 40px"></image>
