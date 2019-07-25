@@ -12,7 +12,7 @@
                class="loading-trip-image"
                resize="contain"
                quality="original"></image>
-        <text v-if="loadingText"
+        <p v-if="loadingText"
               class="loading-text">{{loadingText}}</p>
       </div>
     </div>

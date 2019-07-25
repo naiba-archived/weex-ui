@@ -15,7 +15,7 @@
 <template>
   <div class="wrapper">
     <div class="btn yellow  btn-margin" @click="openBottomPopup">
-      <text class="btn-txt">Click</p>
+      <p class="btn-txt">Click</p>
     </div>
     <wxc-popup popup-color="rgb(92, 184, 92)"
                :show="isBottomShow"

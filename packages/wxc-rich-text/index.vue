@@ -29,7 +29,7 @@
                            :tag-style="v.style"></wxc-rich-text-tag>
       </div>
     </div>
-    <text class="default-text" v-if="isString">{{configList}}</p>
+    <p class="default-text" v-if="isString">{{configList}}</p>
   </div>
 </template>
 

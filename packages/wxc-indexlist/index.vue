@@ -13,7 +13,7 @@
       <cell v-for="(v,i) in formatList"
             :key="i"
             :ref="'index-item-title-' + v.title">
-        <text :class="['index-list-title',v.type && v.type=='group' && 'group-title']"
+        <p :class="['index-list-title',v.type && v.type=='group' && 'group-title']"
               :style="headerStyle"
               v-if="!onlyShowList">{{v.title}}</p>
         <div v-if="v.type && v.type === 'group' && !onlyShowList"
@@ -33,9 +33,9 @@
                      class="location-icon"
                      src="https://gw.alicdn.com/tfs/TB1JUiUPFXXXXXUXXXXXXXXXXXX-32-32.png"></image>
               <div>
-                <text class="item-name"
+                <p class="item-name"
                       :style="groupItemTextStyle">{{item.name}}</p>
-                <text class="item-desc" v-if="item.desc"
+                <p class="item-desc" v-if="item.desc"
                       :style="groupItemDescStyle">{{item.desc}}</p>
               </div>
             </div>
@@ -49,8 +49,8 @@
                @click="itemClicked(item)"
                :accessible="true"
                :aria-label="`${item.name},${item.desc?item.desc:''}`">
-            <text class="title" :style="itemTextStyle">{{item.name}}</p>
-            <text class="desc" :style="itemDescStyle">{{item.desc}}</p>
+            <p class="title" :style="itemTextStyle">{{item.name}}</p>
+            <p class="desc" :style="itemDescStyle">{{item.desc}}</p>
           </div>
         </div>
       </cell>
@@ -59,7 +59,7 @@
     <div class="index-list-nav"
          :style="navStyle"
          v-if="showIndex && !onlyShowList">
-      <text v-for="(item,index) in formatList"
+      <p v-for="(item,index) in formatList"
             :key="index"
             :style="navTextStyle"
             :title="item.title"
@@ -69,7 +69,7 @@
     <div class="index-list-pop"
          :style="popStyle"
          v-if="popKeyShow">
-      <text class="list-pop-text" :style="popTextStyle">{{popKey}}</p>
+      <p class="list-pop-text" :style="popTextStyle">{{popKey}}</p>
     </div>
   </div>
 </template>

@@ -31,7 +31,7 @@
              :aria-hidden="true"
              @click="closeClicked"
              :src="closeIcon"></image>
-      <text :class="['search-bar-button','search-bar-button-'+theme]"
+      <p :class="['search-bar-button','search-bar-button-'+theme]"
             :style="buttonStyle"
             v-if="needShowCancel"
             @click="cancelClicked">{{cancelLabel}}</p>
@@ -55,7 +55,7 @@
            class="disabled-input has-dep-disabled"></div>
       <div :class="['bar-dep','.bar-dep-'+theme]"
            @click="depClicked">
-        <text class="dep-text">{{depName}}</p>
+        <p class="dep-text">{{depName}}</p>
         <image :src="arrowIcon"
                :aria-hidden="true"
                class="dep-arrow"></image>

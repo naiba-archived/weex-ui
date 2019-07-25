@@ -30,7 +30,7 @@
           <div class="padding"></div>
         </cell>
         <cell class="cell" v-for="(item, index) in items">
-            <text class="text">{{index + 1}}</p>
+            <p class="text">{{index + 1}}</p>
         </cell>
       </list>
   
@@ -41,9 +41,9 @@
       </wxc-slide-nav>
   
       <wxc-slide-nav class="nav nav-bottom" ref="bottomNav" position="bottom" @slideOut="slideOut">
-        <div class="nav-cell"><text class="nav-text">筛选</p></div>
-        <div class="nav-cell"><text class="nav-text">时间</p></div>
-        <div class="nav-cell"><text class="nav-text">从低到高</p></div>
+        <div class="nav-cell"><p class="nav-text">筛选</p></div>
+        <div class="nav-cell"><p class="nav-text">时间</p></div>
+        <div class="nav-cell"><p class="nav-text">从低到高</p></div>
       </wxc-slide-nav>
     </div>
 </template>

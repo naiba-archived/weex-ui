@@ -12,15 +12,15 @@
 <template>
   <div class="wrapper">
     <div class="btn" @click="showCalendar">
-      <text class="btn-txt">单程日历</p>
+      <p class="btn-txt">单程日历</p>
     </div>
 
     <div class="btn btn-margin yellow" @click="showReturnCalendar">
-      <text class="btn-txt">往返日历</p>
+      <p class="btn-txt">往返日历</p>
     </div>
 
     <div class="panel">
-      <text v-if="currentDate" class="text">当前日期: {{currentDate}}</p>
+      <p v-if="currentDate" class="text">当前日期: {{currentDate}}</p>
     </div>
 
     <wxc-page-calendar :date-range="dateRange"

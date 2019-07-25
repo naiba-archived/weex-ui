@@ -20,11 +20,11 @@
                          :tag-theme="newList[0].theme"
                          :tag-style="newList[0].style"></wxc-rich-text-tag>
     </div>
-    <text :class="['wxc-text', newList[0].theme]"
+    <p :class="['wxc-text', newList[0].theme]"
           :style="newList[0].style"
           v-if="newList[0] && newList[0].type === 'text' && newList[0].value">{{newList[0].value}}</p>
 
-    <text :class="['wxc-text', newList[1].theme]"
+    <p :class="['wxc-text', newList[1].theme]"
           :style="newList[1].style"
           v-if="newList[1] && newList[1].value">{{newList[1].value}}</p>
   </div>

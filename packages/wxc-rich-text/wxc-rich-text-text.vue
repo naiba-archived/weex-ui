@@ -2,7 +2,7 @@
 <!-- Created by Tw93 on 17/07/28. -->
 
 <template>
-  <text :class="['wxc-text', textTheme,hasTextMargin ? 'margin-text' : '']" :style="themeStyle">{{textValue}}</p>
+  <p :class="['wxc-text', textTheme,hasTextMargin ? 'margin-text' : '']" :style="themeStyle">{{textValue}}</p>
 </template>
 
 <style scoped>

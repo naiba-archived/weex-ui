@@ -9,7 +9,7 @@
                  :use-default-return="false"
                  @wxcMinibarLeftButtonClicked="minibarLeftButtonClick"></wxc-minibar>
     <div class="calendar-weekday" v-if="isShow">
-      <text class="flex-item weekday-text"
+      <p class="flex-item weekday-text"
             :key="k"
             :aria-label="`周${week}`"
             v-for="(week,k) in ['日','一','二','三','四','五','六']">{{week}}</p>
@@ -19,7 +19,7 @@
       <cell v-for="(month,index) in monthsArray"
             :key="index"
             :class="[!month.title && 'calendar-row']">
-        <text class="month-text"
+        <p class="month-text"
               v-if="month.title">{{month.title}}</p>
         <div v-else
              v-for="(cell,rowIndex) in month"
@@ -30,11 +30,11 @@
              :accessible="true"
              :aria-label="`${cell.text?cell.text:''},${cell.note?cell.note:''},${cell.ext?cell.ext:''}`"
              @click="onClickDate(cell)">
-          <text :class="['calendar-note', cell.cls]"
+          <p :class="['calendar-note', cell.cls]"
                 :style="cell.isSelected ? selectedTextStyle:{}">{{cell.note}}</p>
-          <text :class="['calendar-day', cell.cls]"
+          <p :class="['calendar-day', cell.cls]"
                 :style="cell.isSelected ? selectedTextStyle:{}">{{cell.text}}</p>
-          <text :class="['calendar-ext', cell.cls]"
+          <p :class="['calendar-ext', cell.cls]"
                 :style="cell.isSelected ? selectedTextStyle:{}">{{cell.ext}}</p>
         </div>
       </cell>

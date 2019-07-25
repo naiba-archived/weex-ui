@@ -8,26 +8,26 @@
     <div class="dialog-box" v-if="show" :style="{top:top+'px', left: ((isWeb ? left : 0) + 96) + 'px'}">
       <div class="dialog-content">
         <slot name="title">
-          <text class="content-title">{{title}}</p>
+          <p class="content-title">{{title}}</p>
         </slot>
         <slot name="content">
-          <text class="content-subtext">{{content}}</p>
+          <p class="content-subtext">{{content}}</p>
         </slot>
         <div class="no-prompt"
              v-if="showNoPrompt"
              @click="noPromptClicked">
           <image :src="noPromptIcon" class="no-prompt-icon"></image>
-          <text class="no-prompt-text">{{noPromptText}}</p>
+          <p class="no-prompt-text">{{noPromptText}}</p>
         </div>
       </div>
       <div class="dialog-footer">
         <div class="footer-btn cancel"
              v-if="!single"
              @click="secondaryClicked">
-          <text class="btn-text" :style="{ color: secondBtnColor }">{{cancelText}}</p>
+          <p class="btn-text" :style="{ color: secondBtnColor }">{{cancelText}}</p>
         </div>
         <div class="footer-btn confirm" @click="primaryClicked">
-          <text class="btn-text" :style="{ color: mainBtnColor }">{{confirmText}}</p>
+          <p class="btn-text" :style="{ color: mainBtnColor }">{{confirmText}}</p>
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@
          @click="minusClicked"
          aria-label="减数"
          :accessible="true">
-      <text class="stepper-icon" :style="{ color: isLess?'#cccccc':'#666666' }">-</p>
+      <p class="stepper-icon" :style="{ color: isLess?'#cccccc':'#666666' }">-</p>
     </div>
     <input class="stepper-input"
            type="number"
@@ -21,7 +21,7 @@
          @click="plusClicked"
          aria-label="加数"
          :accessible="true">
-      <text class="stepper-icon" :style="{ color: isOver ? '#cccccc': '#666666' }">+</p>
+      <p class="stepper-icon" :style="{ color: isOver ? '#cccccc': '#666666' }">+</p>
     </div>
   </div>
 </template>

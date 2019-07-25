@@ -6,7 +6,7 @@
     <div v-if="showSolid || showHollow"
          :class="['tag-item','tag-border',showHollow && 'tag-hollow']"
          :style="tagTextStyle">
-      <text class="tag-text" :style="{color:fontColor}">{{value}}</p>
+      <p class="tag-text" :style="{color:fontColor}">{{value}}</p>
     </div>
     <image v-if="showImage"
            :src="img"
@@ -22,7 +22,7 @@
       <div class="tag-left" :style="{backgroundColor:tagColor}">
         <image :src="specialIcon" class="left-image"></image>
       </div>
-      <text class="tag-text" :style="{color:fontColor}">{{value}}</p>
+      <p class="tag-text" :style="{color:fontColor}">{{value}}</p>
     </div>
   </div>
 </template>

@@ -16,7 +16,7 @@
 <template>
   <div class="container">
     <div class="demo">
-      <text class="value-text">base search bar</p>
+      <p class="value-text">base search bar</p>
       <wxc-searchbar ref="wxc-searchbar"
                      @wxcSearchbarCancelClicked="wxcSearchbarCancelClicked"
                      @wxcSearchbarInputReturned="wxcSearchbarInputReturned"
@@ -24,14 +24,14 @@
                      @wxcSearchbarCloseClicked="wxcSearchbarCloseClicked"
                      @wxcSearchbarInputOnFocus="wxcSearchbarInputOnFocus"
                      @wxcSearchbarInputOnBlur="wxcSearchbarInputOnBlur"></wxc-searchbar>
-      <text class="value-text">{{value}}</p>
+      <p class="value-text">{{value}}</p>
     </div>
     <div class="demo demo1">
-      <text class="value-text">input disabled</p>
+      <p class="value-text">input disabled</p>
       <wxc-searchbar disabled="true" @wxcSearchbarInputDisabledClicked="searchbarInputDisabledOnclick"></wxc-searchbar>
     </div>
     <div class="demo demo1">
-      <text class="value-text">has dep</p>
+      <p class="value-text">has dep</p>
       <wxc-searchbar disabled="true"
                      placeholder="type to search"
                      mod="hasDep"

@@ -11,7 +11,7 @@
     <image class="type-ICON"
            v-if="typeIcon"
            :src="typeIcon"></image>
-    <text class="noticebar-content"
+    <p class="noticebar-content"
           :style="{ width: contentWidth + 'px',lines:lines}">{{notice}}</p>
     <div class="more-click-content"
          @click="noticeIconClicked"

@@ -11,10 +11,10 @@
 <template>
   <div class="wrapper">
     <div class="btn" @click="openMask">
-      <text class="btn-txt">Pop up a animation mask</p>
+      <p class="btn-txt">Pop up a animation mask</p>
     </div>
     <div class="btn btn-margin yellow" @click="openNoAnimationMask">
-      <text class="btn-txt">Pop up a no animation mask</p>
+      <p class="btn-txt">Pop up a no animation mask</p>
     </div>
     <wxc-mask height="800"
               width="702"
@@ -28,9 +28,9 @@
               @wxcMaskSetHidden="wxcMaskSetHidden">
       <div class="content">
         <div class="demo-title">
-          <text class="title">Help you build a real Native App</p>
+          <p class="title">Help you build a real Native App</p>
         </div>
-        <text class="content-text">
+        <p class="content-text">
           Different from a "web app", "HTML5 app", or "hybrid app", you can use Weex to build a real mobile app. The code that you write is relatively simple, because you can build native applications just using HTML, CSS, Javascript. But underneath, the core of the application is Objective-C or Java. At the same time, Weex will provide a lot of native components or modules for developers to use.
         </p>
       </div>

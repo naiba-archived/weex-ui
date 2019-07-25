@@ -9,13 +9,13 @@
         <image :src="leftButton"
                v-if="leftButton && !leftText"
                class="left-button"></image>
-        <text v-if="leftText"
+        <p v-if="leftText"
               class="icon-text"
               :style="{ color: textColor }">{{leftText}}</p>
       </slot>
     </div>
     <slot name="middle">
-      <text class="middle-title" :style="{ color: textColor }">{{title}}</p>
+      <p class="middle-title" :style="{ color: textColor }">{{title}}</p>
     </slot>
     <div class="right" @click="rightButtonClicked">
       <slot name="right">
@@ -23,7 +23,7 @@
                class="right-button"
                :src="rightButton"
                :aria-hidden="true"></image>
-        <text v-if="rightText"
+        <p v-if="rightText"
               class="icon-text"
               :style="{ color: textColor }">{{rightText}}</p>
       </slot>

@@ -17,7 +17,7 @@
 <template>
   <div class="wrapper">
     <div class="btn yellow  btn-margin" @click="openBottomPopup">
-      <text class="btn-txt">点击弹出底部面板</p>
+      <p class="btn-txt">点击弹出底部面板</p>
     </div>
     <wxc-popup popup-color="rgb(92, 184, 92)"
                :show="isBottomShow"

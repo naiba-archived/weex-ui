@@ -26,14 +26,14 @@
                v-if="titleType === 'icon' && !titleUseSlot"
                :style="{ width: tabStyles.iconWidth + 'px', height:tabStyles.iconHeight+'px'}"></image>
 
-        <text v-if="titleType === 'iconFont' && v.codePoint && !titleUseSlot"
+        <p v-if="titleType === 'iconFont' && v.codePoint && !titleUseSlot"
               :style="{fontFamily: 'wxcIconFont',fontSize: tabStyles.iconFontSize+'px', marginBottom:tabStyles.iconFontMarginBottom ? (tabStyles.iconFontMarginBottom +'px') : '8px', color: currentPage == index ? tabStyles.activeIconFontColor : tabStyles.iconFontColor}">{{v.codePoint}}</p>
-        <text
+        <p
           v-if="!titleUseSlot"
           :style="{ fontSize: tabStyles.fontSize+'px', fontWeight: (currentPage == index && tabStyles.isActiveTitleBold)? 'bold' : 'normal', color: currentPage == index ? tabStyles.activeTitleColor : tabStyles.titleColor, paddingLeft:tabStyles.textPaddingLeft+'px', paddingRight:tabStyles.textPaddingRight+'px'}"
           class="tab-text">{{v.title}}</p>
         <div class="desc-tag" v-if="v.badge && !titleUseSlot">
-          <text class="desc-text">{{v.badge}}</p>
+          <p class="desc-text">{{v.badge}}</p>
         </div>
         <div v-if="v.dot && !v.badge && !titleUseSlot" class="dot"></div>
         <slot :name="`tab-title-${index}`" v-if="titleUseSlot"></slot>

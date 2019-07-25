@@ -28,7 +28,7 @@
       <div class="margin">
         <wxc-checkbox-list :list="list"
                            @wxcCheckBoxListChecked="wxcCheckBoxListChecked"></wxc-checkbox-list>
-        <text class="checked-text">选中项 {{checkedList.toString()}}</p>
+        <p class="checked-text">选中项 {{checkedList.toString()}}</p>
       </div>
     </scroller>
   </div>

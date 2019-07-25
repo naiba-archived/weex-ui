@@ -12,15 +12,15 @@
 <template>
   <div class="wrapper">
     <div class="btn" @click="showCalendar">
-      <text class="btn-txt">one-way</p>
+      <p class="btn-txt">one-way</p>
     </div>
 
     <div class="btn btn-margin yellow" @click="showReturnCalendar">
-      <text class="btn-txt">round-trip</p>
+      <p class="btn-txt">round-trip</p>
     </div>
 
     <div class="panel">
-      <text v-if="currentDate" class="text">current date: {{currentDate}}</p>
+      <p v-if="currentDate" class="text">current date: {{currentDate}}</p>
     </div>
 
     <wxc-page-calendar :date-range="dateRange"

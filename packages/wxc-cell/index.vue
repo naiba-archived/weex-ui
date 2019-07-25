@@ -10,19 +10,19 @@
     @click="cellClicked">
     <slot name="label">
       <div v-if="label">
-        <text class="cell-label-text">{{label}}</p>
+        <p class="cell-label-text">{{label}}</p>
       </div>
     </slot>
     <div class="cell-title">
       <slot name="title">
-        <text class="cell-content">{{title}}</p>
-        <text class="cell-desc-text"
+        <p class="cell-content">{{title}}</p>
+        <p class="cell-desc-text"
               v-if="desc">{{desc}}</p>
       </slot>
     </div>
     <slot name="value"></slot>
     <slot></slot>
-    <text class="extra-content-text" v-if="extraContent">{{extraContent}}</p>
+    <p class="extra-content-text" v-if="extraContent">{{extraContent}}</p>
     <image :src="arrowIcon"
            class="cell-arrow-icon"
            :aria-hidden="true"
