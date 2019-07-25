@@ -19,7 +19,7 @@
            :src="ICON_ARROW_DOWN"
            resize="contain"></image>
     <loading-indicator v-else class="indicator"></loading-indicator>
-    <text class="u-txt" :style="{width:`${textWidth}px`}">{{refresherText}}</p>
+    <p class="u-txt" :style="{width:`${textWidth}px`}">{{refresherText}}</p>
   </refresh>
 </template>
 <script>
